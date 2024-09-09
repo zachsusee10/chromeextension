@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Broadcast Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 200px;
+        }
+        #teams {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+        #suggestions {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        #suggestions li {
+            padding: 5px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        #suggestions li:hover {
+            background-color: #f0f0f0;
+        }
+        #searchBtn {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search for a Team</h1>
+    <input type="text" id="teams" placeholder="Enter team name">
+    <ul id="suggestions"></ul>
+    <button id="searchBtn">Search</button>
+    <div id="result"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+
+

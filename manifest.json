@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Sports Broadcast Finder",
+    "version": "1.2",
+    "description": "A Chrome extension that shows where your favorite sports teams are being broadcasted.",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/mario.png",
+            "48": "images/png.png",
+            "128": "images/spiderman.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
+  
